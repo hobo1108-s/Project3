@@ -198,14 +198,14 @@ MNIST数据集是一个经典的手写数字识别数据集，包含60,000个训
   
   LeNet在测试集上达到了 $99\%$ 的准确率
   
-  ![VGG8](E:\HUSTProject\PythonProject3\fig\VGG8.png)
+  ![VGG8](fig/VGG8.png)
 
 ​        VGG8在测试集上达到了$99.21\%$的准确率
 
-![ResNet18](E:\HUSTProject\PythonProject3\fig\ResNet18.png)
+![ResNet18](fig/ResNet18.png)
 
 ​        ResNet在测试集上达到$99.42\%$的准确率
 
-![ViT](E:\HUSTProject\PythonProject3\fig\ViT.png)
+![ViT](fig/ViT.png)
 
 ​      ViT在测试集上达到$97.87\%$的准确率
