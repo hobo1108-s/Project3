@@ -187,25 +187,17 @@ MNIST数据集是一个经典的手写数字识别数据集，包含60,000个训
   rain_dataset = datasets.MNIST(root='./data', train=True, download=False, transform=transform)
   test_dataset = datasets.MNIST(root='./data', train=False, download=False, transform=transform)
 
-- **模型训练**：batch_size = 64, num_epochs = 5, learning_rate = 0.001
+- **模型训练**：batch_size = 64, num_epochs = 10, learning_rate = 0.001
 
 - **模型评估**：在测试集上评估模型性能，用交叉熵损失作为测试损失
 
 ## 完成效果
 - **性能比较**：
 
-  ![LeNet](fig/LeNet.png)
-  
-  LeNet在测试集上达到了 $99\%$ 的准确率
-  
-  ![VGG8](fig/VGG8.png)
 
-​        VGG8在测试集上达到了$99.21\%$的准确率
-
-![ResNet18](fig/ResNet18.png)
-
-​        ResNet在测试集上达到$99.42\%$的准确率
-
-![ViT](fig/ViT.png)
-
-​      ViT在测试集上达到$97.87\%$的准确率
+| 模型     | 训练时长 | 在测试集上的准确度 |
+|----------|----------|:------------------|
+| LeNet    | 140.76 秒 | 99 %            |
+| VGG8     | 592.56 秒 | 99.21 %         |
+| ResNet18 | 393.14 秒 | 99.42 %         |
+| ViT      | 221.13 秒 | 97.87 %         |
